@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+header {
+  margin-top: 3rem;
+
+  nav {
+    font-size: $fs-md;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      li {
+        position: relative;
+        flex-grow: 1;
+
+        button {
+          background: none;
+          border: none;
+        }
+        
+        a {
+          color: $primary-light;
+          font-weight: $fw-b;
+          text-transform: uppercase;
+        }
+
+        a:link {
+          color: $primary-light;
+        }
+
+        a:visited {
+          color: $primary-light;
+        }
+
+        a:focus {
+          color: $primary-accent;
+        }
+
+        a:hover {
+          color: $primary-accent;
+        }
+
+        a:active {
+          color: $primary-accent;
+        }
+      }
+    }
+
+  }
+
+}

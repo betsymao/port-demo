@@ -1,0 +1,60 @@
+@use '../abstracts/' as *;
+
+.projects {
+  border-bottom: $primary-accent solid 0.5rem;
+
+  h2 {
+    margin-bottom: 3rem;
+    color: $primary-light;
+    font-size: $fs-lg;
+    font-weight: $fw-b;
+  }
+
+  .project {
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 0;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .btn-link {
+      text-decoration: none;
+      padding: 0.5rem 1.5rem;
+      background: $primary-light;
+      border: 1px solid $primary-dark;
+      border-radius: 1rem;
+      font-weight: $fw-b;
+
+        &:hover {
+          color: $primary-dark;
+        }
+    }
+
+   &:hover .project-card {
+      opacity: 1;
+    }
+
+    &-card {
+      background-color: $primary-accent;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+
+      .project-text {
+        padding: 2rem;
+        color: $primary-dark;
+
+        h3 {
+          font-weight: $fw-b;
+        }
+      }
+    }
+  }
+}

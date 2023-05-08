@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+footer {
+  margin-block: 3rem;
+  text-align: end;
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  a {
+    margin-inline: 1rem;
+    color: $primary-light;
+    font-weight: $fw-b;
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a:link {
+    color: $primary-light;
+  }
+
+  a:visited {
+    color: $primary-light;
+  }
+
+  a:focus {
+    color: $primary-accent;
+  }
+
+  a:hover {
+    color: $primary-accent;
+    text-transform: lowercase;
+  }
+
+  a:active {
+    color: $primary-accent;
+  }
+}

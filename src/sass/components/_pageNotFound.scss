@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.not-found {
+  margin-block: 3rem;
+  border-bottom: $primary-accent solid 0.5rem;
+
+  h1 {
+    color: $primary-accent;
+    font-size: $fs-lg;
+    font-weight: $fw-b;
+  }
+
+
+}

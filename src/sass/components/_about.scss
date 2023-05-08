@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+
+.about {
+  margin-block: 3rem;
+  border-bottom: $primary-accent solid 0.5rem;
+
+  h1 {
+    color: $primary-accent;
+    font-size: $fs-lg;
+    font-weight: $fw-b;
+  }
+
+  &-text {
+    font-size: $fs-md;
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin: 3rem;
+  }
+  
+  a {
+    display: inline-block;
+    // margin: 3rem;
+    color: $primary-light;
+    font-weight: $fw-b;
+    text-transform: uppercase;
+  }
+
+  a:link {
+    color: $primary-light;
+  }
+
+  a:visited {
+    color: $primary-light;
+  }
+
+  a:focus {
+    color: $primary-accent;
+  }
+
+  a:hover {
+    color: $primary-accent;
+    text-transform: lowercase;
+  }
+
+  a:active {
+    color: $primary-accent;
+  }
+}
